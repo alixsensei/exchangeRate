@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+<input id="inputCurr" type="number" min="0" [(ngModel)]="inputValue">
+<select [(ngModel)]="inCurr">
+  <option *ngFor="let curr of currencies">{{curr}}</option>
+</select>
+<br/>
+<br/>
+<input id="outputCurr" type="number" min="0" [ngModel]="output()" [disabled]="true">
+<select [(ngModel)]="outCurr">
+  <option *ngFor="let curr of currencies">{{curr}}</option>
+</select>
+
+</body>
+
+</html>
