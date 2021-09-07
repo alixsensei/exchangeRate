@@ -45,8 +45,8 @@ export class ConverterComponent implements OnInit {
     }
     else
       return input;
-
   };
+
   output() {
     return this.outputValue(this.inputValue,  this.inCurr, this.outCurr);
   };
